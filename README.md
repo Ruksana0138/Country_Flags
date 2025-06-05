@@ -1,4 +1,4 @@
-Country App
+Country Flag
 
 A responsive React.js application to explore country details with filters, sliders, and pagination — built using React, Redux Toolkit, React-Bootstrap and hosted on Vercel.
 
@@ -11,6 +11,7 @@ Filter countries by continent/region
 Load More pagination for smooth UX
 Fully responsive design based on a Figma mockup
 State management using Redux Toolkit
+
 Tech Stack
 
 React.js (with Hooks)
