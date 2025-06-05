@@ -17,15 +17,17 @@ const countriesSlice = createSlice({
     currentPage: 1,
     itemsPerPage: 8,
     regions: [],
+    regionFilter: 'All', // ✅ added regionFilter
     status: 'idle',
-    error: null
+    error: null,
   },
   reducers: {
     setRegionFilter: (state, action) => {
+      state.regionFilter = action.payload; // ✅ update selected region
       if (action.payload === 'All') {
         state.filteredData = state.data;
       } else {
-        state.filteredData = state.data.filter(country => 
+        state.filteredData = state.data.filter(country =>
           country.region === action.payload
         );
       }
